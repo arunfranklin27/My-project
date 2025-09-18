@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/049/974/383/small_2x/top-view-of-vibrant-cultural-dishes-on-rustic-wooden-table-free-photo.jpg");
+  background-position:unset;
+  backdrop-filter: blur(3px);
+  padding: 20px;
+}
+
+.main {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  padding: 50px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 60%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.2rem;
+  color: #f5ebbd;
+  margin-bottom: 20px;
+}
+
+.search {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #808080;
+  border-radius: 30px;
+  padding: 6px 12px;
+  background: #333;
+  box-shadow: 0 0 6px rgba(0, 100, 0, 0.5);
+  transition: 0.2s ease-in-out;
+}
+
+.search-box:hover {
+  border-color: #999;
+}
+
+.input {
+  flex: 1;
+  font-family: cursive;
+  border: none;
+  font-size: 1rem;
+  padding: 6px 8px;
+  color: #fff;
+  background: transparent;
+  outline: none;
+}
+
+.input::placeholder {
+  color: #bbb;
+}
+
+.btn-icon-content {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 50%;
+  transition: 0.3s;
+  opacity: 0.8;
+}
+
+.btn-icon-content:hover {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+
+#results {
+  display: grid;
+grid-template-columns: repeat(2, 1fr);
+  flex-wrap: wrap;;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.recipe-item {
+  list-style: none;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.recipe-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.recipe-item img {
+  width: 90%;
+  border-radius: 13px;
+}
+
+.recipe-link a {
+  display: block;
+  margin-top: 10px;
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: transparent;
+  width: 50%;
+  height: 30PX;
+  line-height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+}
+
+.recipe-link a:hover {
+  background-color: rgba(70, 4, 45, 0.651);
+  font-weight: bold;
+  color: #ffcc00;
+
+}
